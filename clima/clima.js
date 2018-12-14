@@ -1,4 +1,4 @@
-const key = require('../constants/apiKey').weatherkey
+const key = require('../constants/apiKey').weatherKey
 const axios = require('axios').default
 
 const getClima = async (pos) => {

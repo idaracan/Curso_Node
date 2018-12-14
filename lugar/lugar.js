@@ -1,5 +1,5 @@
 const axios = require('axios').default
-const apiKey = require('../constants/apiKey').key
+const apiKey = require('../constants/apiKey').mapsKey
 const getLatLng = async (direccion) => {
     const url = encodeURI(`https://maps.googleapis.com/maps/api/geocode/json?address=${direccion}&key=${apiKey}`)
     let respuesta = await axios.get(url)
